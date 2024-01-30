@@ -107,13 +107,13 @@ a {
 
 .MuiDayCalendar-weekDayLabel, .MuiPickersYear-yearButton, .MuiDayCalendar-weekDayLabel, .MuiPickersDay-root	{
   font-size: 2rem!important;
-  color: #FFFFFF;
+  color: #FFFFFF!important;
 }
 
 .MuiPickersCalendarHeader-label{
   font-size: 1.8rem!important;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #FFFFFF!important;
 }
 
 .Mui-selected {
