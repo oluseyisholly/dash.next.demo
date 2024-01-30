@@ -81,18 +81,14 @@
 
 html,
 body {
+  font-size: 58.5%;
   max-width: 100vw;
-  overflow-x: hidden;
+  font-family: Open Sans;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #FFFFFF;
 }
 
 a {
@@ -104,4 +100,34 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+
+
+.MuiDayCalendar-weekDayLabel, .MuiPickersYear-yearButton, .MuiDayCalendar-weekDayLabel, .MuiPickersDay-root	{
+  font-size: 2rem!important;
+  color: #FFFFFF;
+}
+
+.MuiPickersCalendarHeader-label{
+  font-size: 1.8rem!important;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.Mui-selected {
+  background-color: #2983FF;
+}
+
+.MuiPickersCalendarHeader-switchViewIcon{
+  width: 30px;
+  height: 30px;
+}
+.MuiPickersCalendarHeader-switchViewIcon > path{
+  fill: white;
+}
+
+.MuiCircularProgress-svg {
+  stroke-linecap: round;
 }

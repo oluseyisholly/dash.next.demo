@@ -1,0 +1,22 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    padding-left: 46px;
+    padding-block: 15px;
+    height: 40px;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.wrapper:hover img{
+    background-color: #4B4DED;
+
+}
+
+.wrapper > h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    color: #ffffff;
+}

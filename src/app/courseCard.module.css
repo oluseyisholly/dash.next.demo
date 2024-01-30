@@ -1,0 +1,45 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: solid #DDDDDD 0.1rem;
+    padding-inline: 4.9rem 3.0rem;
+    padding-block: 3.5rem;
+}
+
+
+.wrapper > div:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.0rem;
+    height: 8.0rem;
+    border-radius: 100%;
+}
+
+.wrapper > div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wrapper > div:nth-of-type(2) > p {
+    font-size: 4.0rem;
+    font-weight: 400;
+    line-height: 5.4rem;
+    text-align: center;
+    color: #000050;
+}
+
+
+.wrapper > div:nth-of-type(2) > span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #000050;
+}
+

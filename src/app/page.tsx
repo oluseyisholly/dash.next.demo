@@ -1,95 +1,114 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import CourseCard from "./courseCard";
+import { Box, Button, CircularProgress } from "@mui/material";
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+import LocalizationProvider from '@mui/x-date-pickers/LocalizationProvider';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+      <h1>Course Overview</h1>
+      <section>
+            <CourseCard svg="courses.svg" value={20} name="Courses Taken" bgColor="#4F46E51A" cirColor="#4B4DED" />
+            <CourseCard svg="courses.svg" value={13} name="Ongoing Courses" bgColor="#F79E1B1A" cirColor="#F79E1B" />
+            <CourseCard svg="courses.svg" value={20} name="Semester Units" bgColor="#2983FF1A" cirColor="#2983FF" />
+            <CourseCard svg="courses.svg" value={20} name="Outstanding Courses" bgColor="#FF00001A" cirColor="#FF0000" />
+      </section>
+
+      <section>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+          <div>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+                src={`/photo.svg`}
+                alt="Search Logo"
+                width={166}
+                height={166}
+                priority
             />
-          </a>
+            <div>
+               <p>Department:</p>
+               <h2>Surveying and Geoinformatics</h2>
+            </div>
+            <div>
+               <p>Matriculation Number</p>
+               <h2>SVG/12/3456</h2>
+            </div>
+          </div>
+          <div>
+            <Button  variant="outlined">Edit Profile</Button>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div>
+          <div>
+            <div>
+               <p>First Name and Middle Name</p>
+               <h2>Ayomide</h2>
+            </div>
+            <div>
+               <p>Last Name</p>
+               <h2>Akinyemi</h2>
+            </div>
+            <div>
+               <p>Email Address</p>
+               <h2>ayomideakin@mail.com</h2>
+            </div>
+          </div>
+          <div>
+            <div>
+               <p>Personal Phone Number</p>
+               <h2>08146550397</h2>
+            </div>
+            <div>
+               <p>Parent/Guardian Phone Number</p>
+               <h2>08012345678</h2>
+            </div>
+            <div>
+               <p>Residential Address</p>
+               <h2>No. 1, Full address, City, State, Country</h2>
+            </div>
+          </div>
+          <div>
+            <div>
+               <p>Marital Status</p>
+               <h2>Single</h2>
+            </div>
+            <div>
+               <p>Religion</p>
+               <h2>Christianity</h2>
+            </div>
+            <div>
+               <p>Disability</p>
+               <h2>None</h2>
+            </div>
+          </div>
+        </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div>
+          <div >
+          <DateCalendar     sx={{ fontSize: '300px'}}  />
+          </div>
+          <div>
+            <h4>Current CGPA</h4>
+            <div>
+              <div>
+                  <p>remark</p>
+                  <span>Good Standing</span>
+              </div>
+              <div>
+                  <p>4.29</p>
+                  <span>86%</span>
+                <div className={styles.circularProgressWrapper}>
+                  <CircularProgress sx={{color: '#006924'}}  className={styles.circularProgress } variant="determinate" value={86} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
