@@ -53,7 +53,7 @@ export default function RootLayout({
                 </div>
                 <div>
                   {
-                    navItems.map((item, index) => <NavItem  svg={item.svg} name={item.name}/>)
+                    navItems.map((item, index) => <NavItem key={index}  svg={item.svg} name={item.name}/>)
                   }
                 </div>
                 <div>
