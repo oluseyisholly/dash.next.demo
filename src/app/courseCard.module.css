@@ -7,6 +7,11 @@
     border: solid #DDDDDD 0.1rem;
     padding-inline: 4.9rem 3.0rem;
     padding-block: 3.5rem;
+
+    @media (max-width: 926px){
+        padding-inline: 2rem 2rem;
+        padding-block: 2.2rem;
+    }
 }
 
 
@@ -32,6 +37,10 @@
     line-height: 5.4rem;
     text-align: center;
     color: #000050;
+
+    @media (max-width: 926px){
+        font-size: 3.6rem;
+    }
 }
 
 
@@ -41,5 +50,9 @@
     line-height: 2.5rem;
     text-align: center;
     color: #000050;
+
+    @media (max-width: 926px){
+        font-size: 1.4rem;
+    }
 }
 
