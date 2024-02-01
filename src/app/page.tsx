@@ -23,8 +23,8 @@ export default function Home() {
           <Image
               src={`/photo.svg`}
               alt="Search Logo"
-              width={166}
-              height={166}
+              width={150}
+              height={150}
               priority
           />
           <div>
