@@ -16,8 +16,8 @@ const NavBar  = ({ handlclick}:navBarProps) =>  {
                 <Image
                     src="/hamburger.svg"
                     alt="Search Logo"
-                    width={24}
-                    height={24}
+                    width={30}
+                    height={30}
                    
                 />
             </span>
@@ -27,8 +27,8 @@ const NavBar  = ({ handlclick}:navBarProps) =>  {
                 <Image
                     src="/arrowDown.svg"
                     alt="Search Logo"
-                    width={24}
-                    height={24}
+                    width={20}
+                    height={230}
                     priority
                 />
                 
