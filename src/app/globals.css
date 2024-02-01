@@ -135,7 +135,6 @@ a {
 .MuiDrawer-paper{
   width: 300px;
   background-color: #4B4DED !important;
-  height: 100vh !important;
 
   @media (max-width: 300px){
     width: 250px;
