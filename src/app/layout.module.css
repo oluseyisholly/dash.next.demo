@@ -240,8 +240,7 @@
     
 }
 
-.displaySide2{
-
+.displaySide1{
     display: none;
     @media (max-width: 926px){
         display: block;
