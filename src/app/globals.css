@@ -131,3 +131,13 @@ a {
 .MuiCircularProgress-svg {
   stroke-linecap: round;
 }
+
+.MuiDrawer-paper{
+  width: 300px;
+  background-color: #4B4DED;
+
+  @media (max-width: 300px){
+    width: 250px;
+  }
+
+}

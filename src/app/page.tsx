@@ -20,14 +20,14 @@ export default function Home() {
 
       <section>
         <div>
+          <Image
+              src={`/photo.svg`}
+              alt="Search Logo"
+              width={166}
+              height={166}
+              priority
+          />
           <div>
-            <Image
-                src={`/photo.svg`}
-                alt="Search Logo"
-                width={166}
-                height={166}
-                priority
-            />
             <div>
                <p>Department:</p>
                <h2>Surveying and Geoinformatics</h2>
@@ -36,10 +36,11 @@ export default function Home() {
                <p>Matriculation Number</p>
                <h2>SVG/12/3456</h2>
             </div>
+            <div>
+            < Button  variant="outlined">Edit Profile</Button>
           </div>
-          <div>
-            <Button  variant="outlined">Edit Profile</Button>
           </div>
+          
         </div>
 
         <div>

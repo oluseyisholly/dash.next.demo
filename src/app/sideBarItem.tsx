@@ -1,11 +1,11 @@
 import Image from "next/image";
-import styles from "./navItem.module.css"
+import styles from "./sideBarItem.module.css"
 
 export interface navItemProps {
     svg?: string
     name?: string
 }
-const NavItem  = ({svg, name}:navItemProps) =>  {
+const SideBarItem  = ({svg, name}:navItemProps) =>  {
   return <>
     <div className={styles.wrapper}>
         <Image
@@ -13,6 +13,8 @@ const NavItem  = ({svg, name}:navItemProps) =>  {
             alt="Search Logo"
             width={32}
             height={32}
+            className={styles.navLogo}
+            color="#4B4DED"
             priority
         />
         <h2>
@@ -22,4 +24,4 @@ const NavItem  = ({svg, name}:navItemProps) =>  {
   </>
 };
 
-export default NavItem
+export default SideBarItem

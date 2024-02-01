@@ -6,12 +6,16 @@
     height: 40px;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
     
 }
 
-.wrapper:hover img{
-    background-color: #4B4DED;
+.wrapper:hover > img{
+    color: #4B4DED;
+}
 
+.wrapper:hover{
+    background-color: #ffffff;
 }
 
 .wrapper > h2 {
