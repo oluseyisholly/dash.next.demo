@@ -15,6 +15,7 @@ const CourseCard  = ({svg, name, value, bgColor, cirColor}:courseCardProps) =>  
             <Image
                 src={`/${svg}`}
                 alt="Search Logo"
+                className={styles.img}
                 width={47}
                 height={47}
                 priority
