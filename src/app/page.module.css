@@ -23,6 +23,7 @@
 
     @media (max-width: 1460px){
       grid-template-columns: 1fr  1fr;
+      gap: 5px;
     }
 }
 
